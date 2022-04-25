@@ -1,0 +1,12 @@
+<h4>User List</h4>
+<hr>
+<table>
+  <tr *ngFor="let dataItem of userDatasource">
+    <td>{{dataItem.id}}</td>
+    <td>{{dataItem.name}}</td>
+    <td>
+      <input type="button" value="getir" (click)="getUser(dataItem)">
+    </td>
+  </tr>
+</table>
+<app-user></app-user>
